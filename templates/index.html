@@ -1,0 +1,6 @@
+{% for site in sites %}
+  <h1>{{ site.name }}</h1>
+  <code>{{ site.api_key }}</code>
+  <a href="{{ url_for('fix_firewall', site_id=site.id) }}">Fix firewall</a>
+  <a href="{{ url_for('break_firewall', site_id=site.id) }}">Break firewall</a>
+{% endfor %}

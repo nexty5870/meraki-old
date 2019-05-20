@@ -1,0 +1,3 @@
+*.py[co]
+.ropeproject
+__pycache__
